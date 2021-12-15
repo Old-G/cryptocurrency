@@ -35,7 +35,7 @@ a:hover{
 .wallet-btn{
   display: flex;
   justify-content: flex-end;
-  margin: 15px 15px 0 0;
+  padding: 15px 15px 0 0;
 }
 
 .wallet-container{
@@ -99,13 +99,13 @@ a:hover{
   font-size: 12px;
 }
 
+.ant-modal-close{
+  color: white;
+}
+
 .ant-modal-close-x{
   width: 40px;
   height: 40px;
-}
-
-.anticon{
-  color: white;
 }
 
 .ant-modal-body{
@@ -281,7 +281,7 @@ a:hover{
 
   .main{
       flex: 1;
-      margin-top: 90px;
+      margin-top: 80px;
       margin-left: 0px;
       margin-right: 10px;
   }
