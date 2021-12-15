@@ -53,7 +53,7 @@ const Cryptocurrencies = ({ simplified }) => {
                   />
                 }
               >
-                <p>Price: {millify(currency?.price, { precision: 3 })}</p>
+                <p>Price: ${millify(currency?.price, { precision: 3 })}</p>
                 <p>Market Cap: {millify(currency?.marketCap)}</p>
                 <p>Daily Changes: {millify(currency?.change)}%</p>
               </Card>
