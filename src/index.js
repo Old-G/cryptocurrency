@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'antd/dist/antd.css'
 import { Provider } from 'react-redux'
+import { DAppProvider } from '@usedapp/core'
 
 import App from './App'
 import reportWebVitals from './reportWebVitals'
@@ -11,11 +12,13 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </Router>
+    <DAppProvider config={{}}>
+      <Router>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </Router>
+    </DAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

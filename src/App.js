@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
 import {
@@ -10,8 +10,20 @@ import {
   CryptoDetails,
 } from './components'
 import './App.css'
+import ConnectButton from './components/ConnectButton'
+import AccountModal from './components/AccountModal'
 
 function App() {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+
+  const showModal = () => {
+    setIsModalVisible(true)
+  }
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <div className='app'>
       <div className='navbar'>
@@ -19,6 +31,10 @@ function App() {
       </div>
       <div className='main'>
         <Layout>
+          <div className='wallet-btn'>
+            <ConnectButton showModal={showModal} />
+            <AccountModal isModalVisible={isModalVisible} handleCancel={handleCancel} />
+          </div>
           <div className='routes'>
             <Routes>
               <Route exact path='/' element={<Homepage />}></Route>

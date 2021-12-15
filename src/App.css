@@ -30,8 +30,183 @@ a:hover{
 .main{
   flex: 0.8;
   width: 100%;
-  
 }
+
+.wallet-btn{
+  display: flex;
+  justify-content: end;
+  margin: 15px 15px 0 0;
+}
+
+.wallet-container{
+  display: flex;
+  align-items: center;
+  background-color: #2D3747;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.wallet-text{
+  color: white;
+  padding: 0 10px;
+}
+
+.wall-btn{
+  background-color: #1A212D;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.wall-btn-text{
+  color: white;
+  margin-right: 5px;
+}
+
+.wall-btn:hover{
+  border: 1px solid rgb(80, 80, 221);
+  background-color: #1A212D;
+}
+
+.connect-btn{
+  border-radius: 7px;
+  font-weight: 500;
+  border: none;
+}
+
+.ant-modal-wrap{
+  right: 7px;
+  left: auto;
+  top: -60px;
+}
+
+.ant-modal-content{
+  background-color: #1A1C1E;
+  border-radius: 15px;
+}
+
+.ant-modal-header{
+  background-color: #1A1C1E;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+}
+
+.ant-modal-title{
+  color: white;
+  font-size: 12px;
+}
+
+.ant-modal-close-x{
+  width: 40px;
+  height: 40px;
+}
+
+.anticon{
+  color: white;
+}
+
+.ant-modal-body{
+  padding: 0 23px 80px 23px;
+}
+
+.ant-modal{
+  position: relative;
+  font-size: 12px;
+}
+
+.account-modal-body{
+  border: 1px solid #747987;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.account-modal-body-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.account-modal-body-nav__title{
+  color: #747987;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.account-modal-body-nav__btn{
+  font-size: 9px;
+  font-weight: 600;
+  color: #0071bd;
+  border: 1px solid #747987;
+  border-radius: 8px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.account-modal-body-nav__btn:hover{
+  border: 1px solid #0071bd;
+}
+
+.account-modal-body-main{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.account-modal-body-main__text{
+  color: white;
+  margin-left: 5px;
+}
+
+.account-modal-body-footer{
+  display: flex;
+  align-items: center;
+}
+
+.account-modal-body-footer__address{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.account-modal-img{
+  width: 14px;
+  height: 14px;
+  color: #747987;
+}
+
+.account-modal-body-footer__address-title{
+  color: #747987;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.account-modal-body-footer__address-title:active{
+  color: #0071bd;
+}
+
+.account-modal-body-footer__explorer{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account-modal-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2C2F36;
+  color: white;
+  padding: 20px 0 20px 23px;
+  border-radius: 0 0 15px 15px;
+}
+
 .routes{
   padding: 20px;
 }
