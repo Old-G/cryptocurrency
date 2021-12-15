@@ -226,8 +226,10 @@ a:hover{
   align-items: center;
   width: 100%;
 }
+
 .logo{
-  margin: 0 0 0 15px;
+  margin-left: 15px;
+  font-size: 24px;
 }
 .logo a{
  color: white;

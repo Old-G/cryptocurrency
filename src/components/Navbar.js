@@ -38,9 +38,9 @@ const Navbar = () => {
           src='https://i.ibb.co/Z11pcGG/cryptocurrency.png'
           size='large'
         />
-        <Typography.Title level={2} className='logo'>
+        <div className='logo'>
           <Link to='/'>CryptoBam</Link>
-        </Typography.Title>
+        </div>
         <Button
           className='menu-control-container'
           onClick={() => setActiveMenu(!activeMenu)}
