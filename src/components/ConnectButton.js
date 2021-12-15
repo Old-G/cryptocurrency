@@ -1,5 +1,5 @@
 import { useEthers, useEtherBalance } from '@usedapp/core'
-import { Typography, Button, Row, Col } from 'antd'
+import { Typography, Button } from 'antd'
 import { formatEther } from '@ethersproject/units'
 import Identicon from './Identicon'
 

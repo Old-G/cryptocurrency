@@ -8,14 +8,14 @@ const { Text } = Typography
 
 const AccountModal = ({ isModalVisible, handleCancel }) => {
   const { account, deactivate } = useEthers()
-  const [copySuccess, setCopySuccess] = useState('')
+  const [copySuccess, setCopySuccess] = useState('Copy Address')
 
   const copyClick = async (copyMe) => {
     try {
       await navigator.clipboard.writeText(copyMe)
-      setCopySuccess('Copied!')
+      setCopySuccess('Copied')
       setTimeout(() => {
-        setCopySuccess('')
+        setCopySuccess('Copy Address')
       }, 2000)
     } catch (err) {
       setCopySuccess('Failed to copy!')
@@ -76,7 +76,7 @@ const AccountModal = ({ isModalVisible, handleCancel }) => {
               />
             </svg>
             <div className='account-modal-body-footer__address-title'>
-              Copy Address
+              {copySuccess}
             </div>
           </div>
           <a
